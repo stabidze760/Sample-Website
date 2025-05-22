@@ -1,34 +1,81 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Kolenogroup Style Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">The Kolenogroup</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-header {
-  background-color: #111;
-  padding: 1em 0;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- Hero Section with Background Image -->
+  <section id="hero" class="hero-section">
+    <div class="overlay">
+      <h2>Luxury Homes & Premium Properties</h2>
+      <p>Find your dream home with us</p>
+    </div>
+  </section>
 
-header h1 {
-  margin: 0;
-}
+  <!-- Properties Section with Floating Image -->
+  <section id="properties" class="properties">
+    <div class="container">
+      <h3>Featured Listings</h3>
+      <div class="property-grid">
+        <div class="property-card">
+          <div class="property-image-container">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Villa" class="property-image"/>
+            <div class="floating-image">
+              <img src="https://images.unsplash.com/photo-1494526585095-c4185f1a4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Floating Decor"/>
+            </div>
+          </div>
+          <h4>Beachfront Villa</h4>
+          <p>Malibu, CA | $3,200,000</p>
+          <a class="btn" href="#contact">Inquire</a>
+        </div>
 
-nav a {
-  color: #fff;
-  margin-left: 1em;
-  text-decoration: none;
-}
+        <div class="property-card">
+          <div class="property-image-container">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Downtown Loft" class="property-image"/>
+            <div class="floating-image">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Decor"/>
+            </div>
+          </div>
+          <h4>Downtown Loft</h4>
+          <p>New York, NY | $950,000</p>
+          <a class="btn" href="#contact">Inquire</a>
+        </div>
+        <!-- Add more property cards as needed -->
+      </div>
+    </div>
+  </section>
 
-.hero {
-  background-image: url('https://images.unsplash.com
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>We specialize in luxury real estate, providing personalized service to find your perfect home.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <form id="contactForm">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Your message" required></textarea>
+        <button type="
