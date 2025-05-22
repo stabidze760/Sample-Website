@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+}
+
+.property-list {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.property-card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+label {
+  margin-top: 1em;
+}
+
+input, select, textarea {
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.75em;
+  background-color: #0077cc;
+}
