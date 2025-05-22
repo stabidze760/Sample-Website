@@ -3,58 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Kolenogroup</title>
+  <title>The Kolenogroup Style Website</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>The Kolenogroup</h1>
-      <nav>
-        <a href="#properties">Properties</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
     <div class="container">
-      <h2>Luxury Homes & Real Estate</h2>
-      <p>Your trusted partner in real estate.</p>
+      <h1 class="logo">The Kolenogroup</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background Image -->
+  <section id="hero" class="hero-section">
+    <div class="overlay">
+      <h2>Luxury Homes & Premium Properties</h2>
+      <p>Find your dream home with us</p>
     </div>
   </section>
 
+  <!-- Properties Section with Floating Image -->
   <section id="properties" class="properties">
     <div class="container">
       <h3>Featured Listings</h3>
       <div class="property-grid">
         <div class="property-card">
-          <img src="https://via.placeholder.com/400x250" alt="Property 1" />
+          <div class="property-image-container">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Villa" class="property-image"/>
+            <div class="floating-image">
+              <img src="https://images.unsplash.com/photo-1494526585095-c4185f1a4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Floating Decor"/>
+            </div>
+          </div>
           <h4>Beachfront Villa</h4>
-          <p>Location: Malibu, CA</p>
-          <p>Price: $3,200,000</p>
+          <p>Malibu, CA | $3,200,000</p>
           <a class="btn" href="#contact">Inquire</a>
         </div>
+
         <div class="property-card">
-          <img src="https://via.placeholder.com/400x250" alt="Property 2" />
+          <div class="property-image-container">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Downtown Loft" class="property-image"/>
+            <div class="floating-image">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Decor"/>
+            </div>
+          </div>
           <h4>Downtown Loft</h4>
-          <p>Location: New York, NY</p>
-          <p>Price: $950,000</p>
+          <p>New York, NY | $950,000</p>
           <a class="btn" href="#contact">Inquire</a>
         </div>
-        <!-- Add more cards as needed -->
+        <!-- Add more property cards as needed -->
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
       <h3>About Us</h3>
-      <p>We are dedicated to helping you find the perfect property. With years of experience, our team is committed to excellence.</p>
+      <p>We specialize in luxury real estate, providing personalized service to find your perfect home.</p>
     </div>
   </section>
 
+  <!-- Contact Form -->
   <section id="contact" class="contact">
     <div class="container">
       <h3>Contact Us</h3>
@@ -62,18 +78,4 @@
         <input type="text" placeholder="Name" required />
         <input type="email" placeholder="Email" required />
         <textarea placeholder="Your message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 The Kolenogroup. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="scripts.js"></script>
-</body>
-</html>
-
+        <button type="
