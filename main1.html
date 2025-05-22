@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Luxury Estates</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Luxury Estates</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="mortgage.html">Mortgage Calculator</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Luxury Estates</h1>
+            <p>Your dream home awaits.</p>
+        </section>
+        <section class="idx-search">
+            <h2>Find Your Luxury Home</h2>
+            <form>
+                <input type="text" placeholder="City, Address, or ZIP" name="search" />
+                <input type="number" placeholder="Max Price" name="price" min="0" />
+                <button type="submit">Search</button>
+            </form>
+            <div class="idx-listings">
+                <!-- IDX listings will appear here -->
+                <p>Current luxury properties will be displayed here.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"The team at Luxury Estates found us our dream home. Highly recommended!"</p>
+                <span>- Sarah W.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Professional, knowledgeable, and attentive to every detail."</p>
+                <span>- James L.</span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        &copy; <span id="year"></span> Luxury Estates. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
